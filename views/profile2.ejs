@@ -1,0 +1,14 @@
+<% include _header%>
+
+<h1><%=arma.name()%></h1>
+<h3> <%=arma.categoria%></h3>
+<a>descripcion: <%=arma.descripcion%></a>
+<p><a>Su potencia por disparo es: <%=arma.fuerza%></a></p>
+<a>Municion: <%=arma.municion%></a>
+
+
+<%if(arma.bio){%>
+    <p><%=arma.bio%></p>
+<%}%>
+
+<% include _footer%>
